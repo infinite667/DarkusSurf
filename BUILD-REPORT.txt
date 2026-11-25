@@ -1,0 +1,12 @@
+DarkusSurf v0.4.0 — native Windows network tools preview
+
+Source: v0.3.0 release, with Windows proxy relay and WinINet recovery record, Tor controller statistics, circuit display, session-only bridge import, rate-limited optional circuit refresh, and scoped SOCKS/browser privacy controls.
+
+PASS: go test -race ./... (Linux; existing tests plus Tor multiline replies, traffic/circuits, bridge validation, HTTP relay SOCKS hostname forwarding and rejection after disconnect, destination restrictions)
+PASS: go vet ./... (Linux)
+PASS: Linux x64 build; offline simulated Tor lifecycle / browser launch / traffic and circuit sample / disconnect test
+PASS: node tests/selection_smoke.js (DOM double)
+PASS: Windows amd64 GUI cross-compilation (Go 1.23.2, CGO disabled)
+PENDING: native Windows GUI rendering, actual Tor bootstrap with new SOCKS flags, bridge connectivity, actual proxy settings apply and exact restoration / crash recovery, DNS/IPv6/WebRTC leak testing, real circuit rotation behavior and exit IP change.
+
+Scope: Windows current-user HTTP/HTTPS proxy only, no transparent system-wide TCP/UDP routing or OS-wide leak protection; traffic statistics are Tor-only. Circuit refresh is off by default and cannot guarantee a changed IP. No new Windows driver or service. Linux remains on its previous web UI. Original Tor bundle upstream signature unverified. Unsigned build.

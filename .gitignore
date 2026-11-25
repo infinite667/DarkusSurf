@@ -1,0 +1,16 @@
+/dist/
+/.venv/
+/vendor/tor/windows/
+/vendor/tor/linux/
+*.exe
+*.dll
+*.log
+*.zip
+*.tar.gz
+__pycache__/
+.pytest_cache/
+.env
+.env.*
+preferences.json
+system-proxy-restore.json
+control_auth_cookie
