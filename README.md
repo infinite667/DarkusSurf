@@ -5,6 +5,19 @@
 
 ![Version](https://img.shields.io/badge/version-v0.4.0-8b5cf6) ![Status](https://img.shields.io/badge/status-development%20preview-orange) ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux-30303a)
 
+
+## Developer & Creator
+
+**Murat Mehmeti**
+
+Creator, Developer & Project Maintainer of DarkusSurf.
+
+- GitHub: [infinite667](https://github.com/infinite667)
+
+DarkusSurf is an independent, open-source project focused on network privacy, selective Tor routing and connection diagnostics.
+
+This project is not affiliated with or endorsed by the Tor Project.
+
 ## Overview
 
 DarkusSurf is an independent Go application for managing Tor connections, selectively launching supported browsers with proxy-configured profiles, and inspecting connection health. It is intended for personal privacy, education and authorized security research. It is not affiliated with the Tor Project or Parrot Security. It is not a VPN, firewall or audited anonymity product.
